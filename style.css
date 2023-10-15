@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    
+}
+body{
+
+    background-image: url('background.png'); 
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    position:relative;
+    overflow-x: hidden;  
+    width: 100vw;
+    height: 400vh;
+    font-family: 'Pixelify Sans', sans-serif;
+
+}
+
+
+
+
+ 
+#page1{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+#page2{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+#page3{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+#page4{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+#heading1{
+    margin-left: 5%;
+    position:absolute;
+    font-size:150px;
+    /* font-weight: bold; */
+    text-shadow: 10px 10px 10px rgba(235, 215, 215, 0.5);
+    color: #840f0f;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-style: oblique;
+}
+
+#heading2{
+    margin-top:13%;
+    margin-left: 16%;
+    width: 400px;
+    position:absolute;
+    font-size:70px;
+    /* font-weight: bold; */
+    color: #840f0f;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-style: oblique;
+}
+
+
+
+#heading3{
+    margin-top:13%;
+    left: 65%;
+    width: 400px;
+    position:absolute;
+    font-size:50px;
+    /* font-weight: bold; */
+    color: #eae3e3;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-style: oblique;
+}
+
+#line1{
+    margin-top:16.5%;
+    left: 68%;
+    width: 200px;
+    position:absolute;
+    font-size:50px;
+    /* font-weight: bold; */
+    color: #eae3e3;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-style: oblique;
+}
+
+#heading4{
+    top:5%;
+    left: 10%;
+    min-width: 400px;
+    position:absolute;
+    font-size:70px;
+    /* font-weight: bold; */
+    color: #eae3e3;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-style: oblique;
+}
+
+
+#rocketcontainer{
+    left: 45%;
+    top:70%;
+    position:fixed;
+}
+#rocketcontainer>#rocket{
+    position:absolute;
+    width: 200px;
+    min-height: 40%;
+    z-index: 1;
+   
+    animation: moveUpDown 2s infinite linear;
+}
+
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px); /* Move up 50px */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+ @keyframes movetocenter {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+} 
+
+
+   
+
+#land-button {
+    
+    background: linear-gradient(90deg, #00f5ff, #ff00e3);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* font-family: 'Arial', sans-serif; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition:  transform 1s;
+}
+
+#land-button:hover {
+    background-color: #2c7a72;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-reaction-effect {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #44b2a7;
+    border-radius: 50%;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+ /* Initial styles for the image */
+.zoom-img {
+    width: 400px; /* Set the initial width of the image */
+    transition: all 0.3s; /* Add a smooth transition effect */
+    opacity: 1; /* Set the initial opacity */
+}
+
+#option3{}
+.zoomed {
+    width: 400px;
+    opacity: 1;
+}
+
+.menu {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%
+  }
+
+  .optionmenu {
+    font-size: 40px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 70px;
+  }
+  .alienstory {
+    text-align: left;
+  }
+
+  .artifactsstory {
+    text-align: center;
+  }
+
+  .flagstory {
+    text-align: right;
+    padding-right: 3vh;
+  }
+
+  a:link { text-decoration: none; color: white;} 
+  a:visited {color:white} 
+  a:hover {color:white;} 
+  a:active {color:white;} 
